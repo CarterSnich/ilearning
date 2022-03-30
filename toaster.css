@@ -1,0 +1,49 @@
+#toaster-wrapper {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    z-index: 10000;
+}
+
+.toaster {
+    height: fit-content;
+    background-color: whitesmoke;
+    border-radius: .25rem;
+    border: 1px solid #8d8d8d;
+    box-shadow: 2px 2px 4px #00000050;
+}
+
+.toaster-head {
+    display: flex;
+    padding: .5rem;
+    border-bottom: 1px solid #8d8d8d;
+}
+
+.toaster-head>* {
+    padding: 0;
+    margin: 0;
+}
+
+.toaster-head>p {
+    flex-grow: 1;
+}
+
+.toaster-head>.toaster-close {
+    border: none;
+    color: rgb(65, 65, 65);
+    margin-bottom: auto;
+    padding: 0.25rem;
+}
+
+.toaster-head>.toaster-close:active {
+    color: rgb(32, 32, 32);
+}
+
+.toaster-body {
+    padding: .75rem .5rem;
+}
+
+.toaster-body>* {
+    padding: 0;
+    margin: 0;
+}
